@@ -31,3 +31,14 @@
 # 20 199.8 Rub.
 
 # TODO: your code here
+
+
+#3 задача. Таблица стоимости
+
+number = float (input ("стоимость товара "))
+i = 2
+while i<21 :
+    print (i, "товар", number*i)
+    i+=1
+    print ("end")
+
