@@ -8,3 +8,21 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+
+#коровы
+
+cow = int (input ("укажите, сколько вам нужно коров "))
+
+if cow % 10 == 0:
+    print (cow, "коров")
+elif cow % 100 == 11:
+    print (cow, "коров")
+elif cow % 10 == 1 or cow == 1 :
+    print (cow, "корова")
+elif 5<= (cow % 10) <10 :
+    print (cow, "коров")
+elif 5<= (cow % 100) <=20 :
+    print (cow, "коров")
+else:
+    print (cow, "коровы")
