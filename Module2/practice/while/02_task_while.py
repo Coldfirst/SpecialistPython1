@@ -3,3 +3,10 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+
+
+end_string = "хватит"
+game_string = input("Сыграем в игру?")
+while game_string != end_string:
+    game_string=input("Сыграем в игру?")
+print(end_string)
