@@ -12,44 +12,15 @@
 
 # TODO: your code here
 
+
 n = int(input("Введите номер месяца"))
-n1 = "январь"
-n2 = "февраль"
-n3 = "март"
-n4 = "апрель"
-n5 = "май"
-n6 = "июнь"
-n7 = "июль"
-n8 = "август"
-n9 = "сентябрь"
-n10 = "октябрь"
-n11 = "ноябрь"
-n12 = "декабрь"
-if n==1:
-    print (n1)
-elif n==2:
-    print (n2)
-elif n==3:
-    print (n3)
-elif n==4:
-    print (n4)
-elif n==5:
-    print (n5)
-elif n==6:
-    print (n6)
-elif n==7:
-    print (n7)
-elif n==8:
-    print (n8)
-elif n==9:
-    print (n9)
-elif n==10:
-    print (n10)
-elif n==11:
-    print (n11)
-elif n==12:
-    print (n12)
+if n == 12 or 1 <= n <= 2:
+    print("Зима")
+elif 3 <= n <= 5:
+    print("Весна")
+elif 6 <= n <= 8:
+    print("Лето")
+elif 9 <= n <= 11:
+    print("Осень")
 else:
-    print("Не верно!")
-
-
+    print("Неправильное значение месяца")
