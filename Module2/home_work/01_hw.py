@@ -13,7 +13,7 @@ n = int (input ("напишите n "))
 m = int (input ("напишите m "))
 k = int (input ("укажите, сколько долек вы хотите отломить "))
 
-if k%n==0 or k%m==0 and k< n*m :
+if (k%n==0 or k%m==0) and k< n*m :
 	print ("yes")
 else:
     print ("no")
