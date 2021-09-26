@@ -7,3 +7,12 @@
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
 # TODO: your code here
+
+floors = int(input("этажей: "))
+level=1 #количество уровней
+sum_total = 0
+while level <= floors:
+    sum_on_level = level**2
+    sum_total+= sum_on_level
+    level+=1
+print (sum_total)
