@@ -46,3 +46,10 @@ print("Количество однофамильцев в организации
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
 
 # TODO: your code here
+
+
+max_emp=staff[0]
+for emp in staff:
+    if emp['salary'] > max_emp['salary']:
+        max_emp=emp
+print (f"{max_emp['name']} {max_emp['surname']}")
