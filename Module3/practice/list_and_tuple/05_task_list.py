@@ -15,3 +15,15 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # Важно! Ваше решение должно работать с любыми корректными "исходными данными"
 # Проверьте это, добавив или удалив несколько элементов списка
+
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+# TODO: your code here
+max_len=len (fruits[0])
+for fruit in fruits:
+    if len (fruit) > max_len:
+        max_len = len (fruit)
+
+# print (max_len)
+for i, fruit in enumerate (fruits,1):
+        num_spaces=max_len - len (fruit)
+        print(str(i)+". "+" "* num_spaces + fruit)
