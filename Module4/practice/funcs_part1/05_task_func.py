@@ -7,3 +7,15 @@
 
 
 # Не забудьте протестировать вашу функцию
+def distance(x1, y1, x2, y2):
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+
+def can_triangle(p1, p2, p3):
+    a = distance(*p1, *p2)
+    b = distance(*p1, *p3)
+    c = distance(*p2, *p3)
+    if a + b > c and a + c > b and b + c > a:
+        p=a+b+c
+        return p
+print(can_triangle((1, 1), (2, 2), (4, 4)))
