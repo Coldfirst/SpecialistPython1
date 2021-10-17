@@ -7,3 +7,9 @@
 # 5) все уникальные(без дубликатов) знаки препинания
 
 text = ...
+
+import re
+
+text = 'I want to sleep'
+pattern = re.compile(r'\w+')
+print (pattern.findall(text)[0])
